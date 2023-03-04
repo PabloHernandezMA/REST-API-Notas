@@ -4,14 +4,16 @@ const database = require("./database");
 const taskRoutes = require("./routes/task.routes");
 const config = require("./config");
 
+//Settings
 app.set("port", config.PORT || 3000); //Se configura el puerto. Si hay una variable de entorno definida como PORT toma de alli el valor. sino toma 3000
+
 
 app.use(express.json()); //Permite procesar paquetes json
 
 //Routes
 app.use("/api/task", taskRoutes);
 
-console.log(config.mongodbURL);
+//console.log(config.mongodbURL);
 
 //Conexion a DB
 database

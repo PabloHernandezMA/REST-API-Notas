@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
 const taskSchema = new Schema(
   {
@@ -22,5 +22,5 @@ const taskSchema = new Schema(
     timestamps: true, //Agrega proiedades 'createdAt' y 'updatedAt'
   }
 );
-
-module.export = model("Task", taskSchema); //Para poder usar el schema en el resto del proyecto se debe exportar como un model, por eso esto
+let Task = model('Task', taskSchema); //Para poder usar el schema en el resto del proyecto se debe exportar como un model, por eso esto
+module.exports = Task
