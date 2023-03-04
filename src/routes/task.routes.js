@@ -22,5 +22,4 @@ router.delete("/:id", TaskController.deleteTask);
 // Actualizar tarea por ID
 router.put("/:id", TaskController.updateTask);
 
-
 module.exports = router;

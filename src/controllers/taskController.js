@@ -47,5 +47,5 @@ module.exports = {
   findTask,
   findAllDoneTasks,
   deleteTask,
-  updateTask
+  updateTask,
 };
