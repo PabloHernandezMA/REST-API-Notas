@@ -4,5 +4,5 @@ config();
 
 module.exports = {
   mongodbURL: process.env.DB_CONNECTION_STRING,
-  PORT: process.env.PORT,
+  PORT: process.env.PORT || 3000,
 };
